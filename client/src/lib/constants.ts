@@ -50,13 +50,6 @@ export const workExperience = [
     location: "Hassi Messaoud, Algeria",
     period: "10/2014 - 11/2015",
     description: "Preparation, coordination, and supervision of works; implementation of safety measures; management of supplier and client relations; compliance with technical specifications; consultation on equipment and business matters; supplier monitoring and support; receipt and qualitative/quantitative verification of delivered materials; verification of installation compliance with regulatory and contractual requirements; tracking of 'Assembly' and 'As-Built' documentation; and reporting progress to management."
-  },
-  {
-    title: "FLT Operative",
-    company: "CEVITAL.SPA",
-    location: "Bejaia, Algeria",
-    period: "05/2013 - 10/2014",
-    description: "Operated forklift trucks (counterbalance and/or reach trucks) to move, load, and unload materials in a warehouse or industrial setting. Ensured safe handling and storage of goods, following company procedures and health & safety regulations. Conducted daily vehicle checks and basic maintenance to ensure equipment readiness. Collaborated with warehouse staff to meet logistics deadlines and maintain workflow efficiency."
   }
 ];
 

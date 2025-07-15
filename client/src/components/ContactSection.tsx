@@ -94,15 +94,21 @@ export default function ContactSection() {
                     variant="ghost"
                     size="icon"
                     className="bg-white/20 text-white hover:bg-white/30"
+                    asChild
                   >
-                    <Linkedin className="w-5 h-5" />
+                    <a href="https://www.linkedin.com/in/malek-mameri-4105912b8/" target="_blank" rel="noopener noreferrer">
+                      <Linkedin className="w-5 h-5" />
+                    </a>
                   </Button>
                   <Button
                     variant="ghost"
                     size="icon"
                     className="bg-white/20 text-white hover:bg-white/30"
+                    asChild
                   >
-                    <Github className="w-5 h-5" />
+                    <a href="https://github.com/MalekMameri" target="_blank" rel="noopener noreferrer">
+                      <Github className="w-5 h-5" />
+                    </a>
                   </Button>
                   <Button
                     variant="ghost"

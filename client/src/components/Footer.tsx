@@ -15,15 +15,21 @@ export default function Footer() {
               variant="ghost"
               size="icon"
               className="text-gray-400 hover:text-white"
+              asChild
             >
-              <Linkedin className="w-6 h-6" />
+              <a href="https://www.linkedin.com/in/malek-mameri-4105912b8/" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="w-6 h-6" />
+              </a>
             </Button>
             <Button
               variant="ghost"
               size="icon"
               className="text-gray-400 hover:text-white"
+              asChild
             >
-              <Github className="w-6 h-6" />
+              <a href="https://github.com/MalekMameri" target="_blank" rel="noopener noreferrer">
+                <Github className="w-6 h-6" />
+              </a>
             </Button>
             <Button
               variant="ghost"
