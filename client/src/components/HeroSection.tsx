@@ -2,28 +2,18 @@ import { Button } from "@/components/ui/button";
 import { Download, ChevronDown } from "lucide-react";
 import { personalInfo } from "@/lib/constants";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
 
 export default function HeroSection() {
   const ref = useScrollAnimation();
   const { toast } = useToast();
 
-  const handleDownloadCV = async () => {
-    try {
-      const response = await apiRequest("GET", "/api/download-cv");
-      const data = await response.json();
-      toast({
-        title: "CV Download",
-        description: data.message,
-      });
-    } catch (error) {
-      toast({
-        title: "Error",
-        description: "Failed to download CV",
-        variant: "destructive",
-      });
-    }
+  const handleDownloadCV = () => {
+    // For static site, we'll show a message about CV download
+    toast({
+      title: "CV Download",
+      description: "CV download feature would be implemented here. Please contact me directly for my CV.",
+    });
   };
 
   const handleScrollToAbout = () => {

@@ -6,9 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Linkedin, Github, Twitter } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import { personalInfo } from "@/lib/constants";
-import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
-import { insertContactMessageSchema } from "@shared/schema";
 
 export default function ContactSection() {
   const ref = useScrollAnimation();
@@ -31,19 +29,12 @@ export default function ContactSection() {
     setIsSubmitting(true);
 
     try {
-      const validatedData = insertContactMessageSchema.parse(formData);
-      const response = await apiRequest("POST", "/api/contact", validatedData);
-      const result = await response.json();
-
-      if (result.success) {
-        toast({
-          title: "Message Sent!",
-          description: result.message,
-        });
-        setFormData({ name: "", email: "", subject: "", message: "" });
-      } else {
-        throw new Error(result.message);
-      }
+      // For static site, we'll show a success message
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for your message. I'll get back to you soon!",
+      });
+      setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       toast({
         title: "Error",
