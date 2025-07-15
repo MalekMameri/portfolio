@@ -3,7 +3,7 @@ export const personalInfo = {
   title: "Electrical Engineering Professional",
   location: "Leicester, United Kingdom",
   phone: "+44 7949 526375",
-  email: "m.mameri.imm@gmail.com",
+  email: "malek.mameri.0607@gmail.com",
   summary: "Qualified engineering professional with extensive experience in electrical systems design. Meticulous and detail-oriented in performing calculations and optimizing designs to ensure safety, code compliance, and alignment with project specifications. Strong analytical skills in identifying and resolving design challenges.",
   address: "Gros-Flat-E06, 21-33 Newarke Street, Leicester, United Kingdom LE1 5SP"
 };
